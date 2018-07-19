@@ -1,0 +1,29 @@
+按照 此教程很快就可以安装好paddlepaddle
+
+首先自行百度下载Vmware
+安装Ubuntu之前 下载好Ubuntu镜像
+再自行百度在Vmware上安装Ubuntu，so easy
+ 
+启动 Ubuntu，打开终端
+（使用pip安装）
+ 
+如果你还没有在pip命令的话，首先要安装pip，要确保安装的pip版本是大于9.0.0的，否则可能无法安装paddlepaddle。 
+安装pip命令如下：
+
+sudo apt install python-pip
+* 
+安装之后，还有看一下pip的的版本pip --version，如果版本低于9.0.0，那要先升级pip，先要下载一个升级文件，命令如下：
+
+wget https://bootstrap.pypa.io/get-pip.py
+* 
+下载完成之后，可以使用这个文件安装最新的pip了
+
+python get-pip.py
+*
+安装pip就可以动手安装paddlepaddle了。***如果权限不够，请在root下执行命令（sudo su）
+pip install paddlepaddle
+* 
+现在就测试看看paddlepaddle有没有，在python的命令终端中试着导入paddlepaddle包：
+
+ import paddle.v2 as paddle
+ 如果没有报错，那么恭喜你。
